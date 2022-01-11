@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Monitor Dell",
+            "price": 800.35
+        },
+        {
+            "id": 2,
+            "name": "Notebook Dell",
+            "price": 5123.35
+        },
+        {
+            "id": 3,
+            "name": "Notebook Gamer Dell",
+            "price": 26299.99
+        },
+    ]
+}
