@@ -1,19 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Monitor Dell",
-            "price": 800.35
-        },
-        {
-            "id": 2,
-            "name": "Notebook Dell",
-            "price": 5123.35
-        },
-        {
-            "id": 3,
-            "name": "Notebook Gamer Dell",
-            "price": 26299.99
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Monitor Dell",
+      "price": 800.35
+    },
+    {
+      "id": 2,
+      "name": "Notebook Dell",
+      "price": 5123.35
+    },
+    {
+      "id": 3,
+      "name": "Notebook Gamer Dell",
+      "price": 26299.99
+    },
+    {
+      "name": "Teste novo produto",
+      "price": "1000",
+      "id": 4
+    },
+    {
+      "name": "novo edit",
+      "price": "5623",
+      "id": 5
+    }
+  ]
 }
