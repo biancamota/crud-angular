@@ -27,7 +27,7 @@ export class ProductReadComponent implements OnInit {
 
   deleteProduct(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.productService.update(this.product).subscribe(() => {
+    this.productService.delete(id).subscribe(() => {
       this.productService.showMessage('Cadastro excluído com sucesso');
     });
   }
