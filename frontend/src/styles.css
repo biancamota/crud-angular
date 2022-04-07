@@ -3,3 +3,11 @@
 .v-middle{
     vertical-align: middle;
 }
+
+.msg-error {
+    color: red;
+}
+
+.msg-success {
+    color: green;
+}
