@@ -24,6 +24,7 @@ import { ProductReadComponent } from './components/product/product-read/product-
 import { MatTableModule } from '@angular/material/table';
 import localePt  from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 registerLocaleData(localePt);
 
@@ -53,7 +54,8 @@ registerLocaleData(localePt);
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [{
     provide: LOCALE_ID,
