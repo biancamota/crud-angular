@@ -25,7 +25,10 @@
                     edit
                 </i>
             </a>
-            <a routerLink="" class="delete">
+            <a [swal]="{ title: 'Excluir', text: 'Tem certeza que deseja excluir o cadastro ?',icon: 'warning', confirmButtonText: 'Excluir', showCancelButton: true }"
+              (confirm)="deleteProduct($event, element)"
+              (dismiss)="handleDismiss($event)"
+              class="delete">
                 <i class="material-icons">
                     delete
                 </i>

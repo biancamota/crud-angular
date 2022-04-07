@@ -15,21 +15,24 @@ export class ProductReadComponent implements OnInit {
 
   constructor(
     private productService: ProductService,
-    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     this.productService.read().subscribe(products => {
       this.products = products;
-      console.log(products);
     })
   }
 
-  deleteProduct(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.productService.delete(id).subscribe(() => {
-      this.productService.showMessage('Cadastro excluído com sucesso');
-    });
+  deleteProduct(event: boolean, element: Product): void {
+    if(event) {
+      this.productService.delete(element.id).subscribe(() => {
+        this.productService.showMessage('Cadastro excluído com sucesso');
+        location.reload();
+      });
+    }
+  }
+
+  public handleDismiss(dismissMethod: any): void {
   }
 
 }
